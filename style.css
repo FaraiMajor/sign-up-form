@@ -1,6 +1,7 @@
 body {
     margin: 0%;
     width: 100%;
+    height: 100vh;
 }
 
 section {
@@ -32,10 +33,13 @@ img {
 
 h1 {
     padding-left: 30px;
-    color: #544af4;
+    color: #552583;
 }
 
-.formArea {}
+.formArea {
+    margin: 0;
+    box-shadow: 10px 5px 5px #F5F5F5;
+}
 
 form {
     margin-left: 30px;
@@ -46,7 +50,6 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    box-shadow: 10px 5px 5px #F5F5F5;
 }
 
 .inputs {
@@ -68,8 +71,8 @@ input {
 
 input:focus {
     outline: none;
-    border-color: #665df5;
-    box-shadow: 0 0 2px #665df5;
+    border-color: #FDB927;
+    box-shadow: 0 0 2px #FDB927;
 }
 
 label {
@@ -82,27 +85,56 @@ button {
     border-radius: 8px;
     padding: 17px 30px 17px 30px;
     font-size: 1em;
-    background-color: #665df5;
+    background-color: #552583;
     color: white;
     cursor: pointer;
     margin-top: 30px;
     margin-left: -5px;
-    transition: background-color .2s ease-in;
+    transition: background-color 1s ease-in;
 }
 
 button:hover {
-    background-color: #544af4;
+    background-color: #8452b2;
 }
 
 .login {
-    background-color: #f8f9fa;
     padding-left: 30px;
     font-size: 1.2rem;
-    height: 17vh;
 }
 
 .login p a {
+    color: #552583;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+@media (min-width:300px) and (max-width:800px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        width: 100%;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    img {
+        width: 100%;
+        height: 50vh;
+    }
+    input {
+        height: 1.8em;
+    }
+}
+
+@media (min-width:800px) and (max-width:1300px) {
+    img {
+        width: 55vw;
+    }
+    input {
+        height: 1.8em;
+    }
 }
