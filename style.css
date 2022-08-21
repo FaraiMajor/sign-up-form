@@ -1,0 +1,108 @@
+body {
+    margin: 0%;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.description {
+    background-color: #f8f9fa;
+    font-size: larger;
+    font-weight: 400;
+    font-size: 1.4em;
+    padding: 50px 20px 20px 30px;
+}
+
+h1 {
+    padding-left: 30px;
+    color: #544af4;
+}
+
+.formArea {}
+
+form {
+    margin-left: 30px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 10px 5px 5px #F5F5F5;
+}
+
+.inputs {
+    margin-top: 7px;
+    margin-left: -4px;
+    padding-top: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 65%;
+    height: 2.3em;
+    border-radius: 4px;
+    border: 1px solid #D3D3D3;
+}
+
+input:focus {
+    outline: none;
+    border-color: #665df5;
+    box-shadow: 0 0 2px #665df5;
+}
+
+label {
+    font-size: .8em;
+}
+
+button {
+    background: none;
+    border: none;
+    border-radius: 8px;
+    padding: 17px 30px 17px 30px;
+    font-size: 1em;
+    background-color: #665df5;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: -5px;
+    transition: background-color .2s ease-in;
+}
+
+button:hover {
+    background-color: #544af4;
+}
+
+.login {
+    background-color: #f8f9fa;
+    padding-left: 30px;
+    font-size: 1.2rem;
+    height: 17vh;
+}
+
+.login p a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
